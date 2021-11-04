@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+.banner{
+    
+    position: relative;
+    height: 100vh;
+    width:100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: black;
+    background-image: url("./assets/unsplash.jpg");
+    background-size: 200% 200%;
+    animation: animation1 120s ease infinite;
+}
+@keyframes animation1 {
+    0%{
+        background-position: 0% 50% ;
+    }
+    50%{
+        background-position: 100% 50% ;
+    }
+    100%{
+        background-position: 0% 50% ;
+    }
+}
+.div2{
+    background-image: url("./assets/bruh.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.6s ease;
+    margin: 1vw;
+}
+.div2:hover{
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.div3{
+    background-image: url("./assets/pota.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s ease;
+    margin: 1vw;
+}
+.div3:hover{
+    filter: blur(8px) hue-rotate(90deg);
+  -webkit-filter: blur(8px) hue-rotate(90deg);
+}
+.div4{
+    background-image: url("./assets/haha.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s ease;
+        margin: 1vw;
+}
+.div4:hover{
+    filter: hue-rotate(90deg);
+  -webkit-filter: hue-rotate(90deg);
+}
+
+.div5{
+    position: relative;
+    background-image: url("./assets/hahaha.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s ease;
+    margin: 1vw;
+}
+.div5:hover{
+    filter: drop-shadow(16px 16px 20px red) brightness(100);
+  -webkit-filter: drop-shadow(16px 16px 20px red) brightness(100);
+}
+.div6{
+    position: relative;
+    grid-column-start:2;
+    grid-column-end: 4;
+    /*grid-row-start: 0;
+    grid-row-end:0;*/
+    transition: 0.6s ease;
+    overflow: hidden;
+}
+.div6 h1{
+    position: absolute;
+    font-family: "Arial";
+    font-size: 5vw;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: rgba(255,255,255,.3);
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    border: 5px solid red;
+    z-index: 1;
+}
+.tag{
+    position: absolute;
+    font-family: "Arial";
+    color:white;
+    font-size:1.5vw;
+    letter-spacing: 10px;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    animation: animation2 50s linear infinite;
+    z-index:3;
+}
+.tag2{
+    position: absolute;
+    font-family: "Arial";
+    color:white;
+    font-size:2vw;
+    letter-spacing: 20px;
+    transform: translate(-50%, -50%);
+    top: 82%;
+    animation: animation3 60s linear infinite;
+    z-index:3;
+}
+@keyframes animation2{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-150%);
+    }
+}
+@keyframes animation3{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.div8{
+    background-image: url("./assets/sakit_mo_na.jpeg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s ease;
+    margin: 1vw;
+}
+.div8:hover{
+    filter: drop-shadow(16px 16px 20px rgb(180, 122, 122)) invert(100%);
+  -webkit-filter: drop-shadow(16px 16px 20px rgb(180, 122, 122)) invert(100%);
+}
+.div9{
+    position: relative;
+    
+}
+.div9 a{
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "roboto light";
+    font-size: 1.5vw;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    padding: 1vw;
+    left: 100%;
+    top:80%;
+    transition: 0.7s ease;
+}
+.div9 a:hover{
+    border-radius: 50px;
+    letter-spacing: 5px;
+    background-color: darkorange;
+    color: black;
+    font-family: "roboto";
+}
+.div11{
+    background-image: url("./assets/twilight.gif");
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s ease;
+    margin: 1vw;
+}
+.div11:hover{
+    filter:  invert(75%) saturate(200%);
+  -webkit-filter: invert(75%) saturate(200%);
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
